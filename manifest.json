@@ -1,0 +1,49 @@
+{
+    "manifest_version": 1,
+    "name": "OCC Local",
+    "version": "1.0.0",
+    "description": "Chrome extension for override resource from Oracle Commerce Cloud",
+    "icons": {
+        "128": "icon.png",
+        "48": "icon.png",
+        "16": "icon.png"
+    },
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "src/ui/popup.html"
+    },
+    "options_page": "src/ui/options.html",
+    "background": {
+        
+        "page": "src/bg/background.html",
+        "persistent": true
+    },
+    "permissions": [
+        "storage",
+        "<all_urls>",
+        "webRequest",
+        "webRequestBlocking",
+        "background",
+        "tabs",
+        "debugger",
+        "activeTab"
+    ],
+    "web_accessible_resources": [
+        "/js/replaceTemplate.js",
+        "/js/less.js"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "run_at": "document_end",
+            "js": [
+                "lib/jquery-3.3.1.min.js",
+                "js/less.js",
+                "js/contentScript.js"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>OCC Local - Local Development for Oracle Commerce Cloud</title>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row logo-row">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-2 col-md-1">
+                        <img src="../../icon.png" alt="icone" title="icone" width="70px" height="70px" />
+                    </div>
+                    <div class="col-sm-10 col-md-11">
+                        <h1>OCC Local</h1>
+                        <div class="subtitulo">Local Development for Oracle Commerce Cloud</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <form class="form-group">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <input type="checkbox" class="checkbox on" id="on" checked="checked" />
+                            <label for="on">
+                                <div class="txt-checkbox">Turn On Extension</div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <label for="occUrl" class="col-form-label">OCC URL:</label>
+                            <div class="subtitulo">Enter here the access URL for your OCC store. Example:
+                                https://ccadmin-test-wxyz.oracleoutsourcing.com/
+                                <div class="col-sm-12">
+                                </div>
+                                <input type="text" class="form-control" id="occUrl" placeholder="OCC URL" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <label for="urlFolderOcc" class="col-form-label">Local Files:</label>
+                            <div class="subtitulo">Enter here the URL for your local folder, that was informed at the <a
+                                    target="_blank"
+                                    href="https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en">Web
+                                    Server for Chrome</a>. Example: http://127.0.0.1:8887/
+                                <div class="col-sm-12">
+                                </div>
+                                <input type="text" class="form-control" id="urlFolderOcc"
+                                    placeholder="Local path of the OCC folder" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <label for="tempoAtualizacao" class="col-form-label">Watcher Time (seconds):</label>
+                            <div class="subtitulo">Enter, in Seconds, how long your files .template and .less will be
+                                automatically changed after being saved and identified change.
+                                <div class="col-sm-12">
+                                </div>
+                                <input type="text" class="form-control" id="tempoAtualizacao"
+                                    placeholder="Refresh time (in seconds)" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                        </div>
+                        <div class="col-sm-12">
+                            <input type="checkbox" class="checkbox" id="log" />
+                            <label for="log">
+                                <div class="txt-checkbox">Show Log</div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <input type="button" id="saveButton" value="Save" class="btn btn-primary btn-block" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row last-line">
+            <div class="col-sm-12">
+                <div class="text-center">
+                    This product is an independent initiative, thus, it has no direct link with any company. Developed
+                    by:
+                    <a target="_blank" href="https://www.linkedin.com/in/brunogalvaods/">
+                        Bruno Galvão
+                    </a>
+                    <span class="sep-and" style="margin: 5px;">and</span>
+                    <a target="_blank" href="https://www.linkedin.com/in/felipefregulhia/">
+                        Felipe Fregulhia
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../../lib/jquery-3.3.1.min.js"></script>
+
+    <!-- options -->
+    <script src="../../js/options.js"></script>
+
+
+</body>
+
+</html>
