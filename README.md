@@ -7,4 +7,4 @@ When configuring to work with your Oracle Commerce Cloud platform, the extension
 
 The .template and .less files are updated with a watcher. That is, just save the file it exchanges. There is no need to reload the page.
 
-![Print](http://prntscr.com/n49feg)
+![Print](https://i.imgur.com/G6nwZHN.png)
